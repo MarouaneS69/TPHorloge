@@ -1,9 +1,13 @@
+#include "CCompteurDigital.h"
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+
+    CCompteurDigital m(60);
+    CCompteurDigital h(24);
+
     return 0;
 }
