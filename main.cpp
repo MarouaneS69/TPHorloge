@@ -13,6 +13,8 @@ int main()
     cout << CPT++ << endl;
     cout << CPT << endl;
 
+    m.incrementer();
+
     if( CPT = 0, CPT <60; CPT++){
     };
     return 0;
