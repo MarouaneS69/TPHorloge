@@ -39,6 +39,8 @@ public:
 	/**
 	 * retourne la valeur sous forme d'entier
 	 */
+
+
 	int GetValCPTint();
 
 	CCompteurDigital(/* valeur max initiale */int pBorneMax);
