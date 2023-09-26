@@ -1,7 +1,7 @@
 #include "CCompteurDigital.h"
 
 bool CCompteurDigital::incrementer() {
-
+    ValCPT = 1;
     ValCPT ++;
 
 }

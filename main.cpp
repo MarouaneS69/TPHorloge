@@ -8,8 +8,12 @@ int main()
 
     CCompteurDigital m(60);
     CCompteurDigital h(24);
-    int ValCPT = 1;
+    unsigned short CPT = 1;
 
-    cout << ValCPT << endl;
+    cout << CPT++ << endl;
+    cout << CPT << endl;
+
+    if( CPT = 0, CPT <60; CPT++){
+    };
     return 0;
 }
