@@ -2,6 +2,8 @@
 
 bool CCompteurDigital::incrementer() {
 
+    ValCPT ++;
+
 }
 
 std::string CCompteurDigital::GetValCPT() {
@@ -9,6 +11,8 @@ std::string CCompteurDigital::GetValCPT() {
 }
 
 int CCompteurDigital::GetValCPTint() {
+
+    return ValCPT;
 
 }
 
