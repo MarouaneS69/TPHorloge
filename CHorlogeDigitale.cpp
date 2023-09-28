@@ -23,3 +23,10 @@ CHorlogeDigitale::CHorlogeDigitale()
     ptrminutes = new CCompteurDigital(60);
 
 }
+
+CHorlogeDigitale::~CHorlogeDigitale()
+{
+    delete ptrheure;
+    delete ptrminutes;
+
+}

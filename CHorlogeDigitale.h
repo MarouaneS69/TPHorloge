@@ -17,6 +17,7 @@ public:
     string getTime();
 
 	CHorlogeDigitale();
+    ~CHorlogeDigitale();
 };
 
 #endif
