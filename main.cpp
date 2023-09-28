@@ -1,4 +1,5 @@
 #include "CCompteurDigital.h"
+#include "CHorlogeDigitale.h"
 #include <iostream>
 
 using namespace std;
@@ -6,8 +7,11 @@ using namespace std;
 int main()
 {
 
-    CCompteurDigital m(60);
-    CCompteurDigital h(24);
+    //CCompteurDigital minutes(60);
+    //CCompteurDigital heure(24);
+    CHorlogeDigitale affichage;
+    CHorlogeDigitale horloge;
+
     unsigned short CPT = 0;
     unsigned short CPT2 = 0;
 
@@ -18,15 +22,18 @@ int main()
     cout << CPT++ << endl;
     cout << CPT << endl;*/
 
-    while(CPT<60){
+   while(true){
+   horloge.OnTopHorloge();}
+
+    /*while(CPT<60){
     CPT++;
-    m.incrementer();
-    h.incrementer();
+    minutes.incrementer();
     }
     while(CPT2<24){
     CPT2++;
-    h.incrementer();
-    }
+    heure.incrementer();
+    }*/
+    cout << affichage.getTime() << endl;
 
-    return 0;
+    return -1;
 }

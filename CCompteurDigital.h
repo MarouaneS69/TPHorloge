@@ -14,11 +14,9 @@ private:
 	/**
 	 * La valeur max du compteur
 	 */
-    unsigned short BorneMax;
-	unsigned short ValCPT;
+    unsigned short BorneMax=24;
+    unsigned short ValCPT=00;
 
-    int minutes = 0;
-    int heure = 0;
 
 public:
 	/**

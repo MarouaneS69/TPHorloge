@@ -1,8 +1,11 @@
 #include "CHorlogeDigitale.h"
 
-void CHorlogeDigitale::OnTopHorloge() {
-    // TODO - implement CHorlogeDigitale::OnTopHorloge
-    throw "Not yet implemented";
+void CHorlogeDigitale::OnTopHorloge()
+{
+    if(ptrminutes->incrementer()==true)
+        {
+        ptrheure->incrementer();
+        }
 }
 
 string CHorlogeDigitale::getTime()
@@ -10,11 +13,14 @@ string CHorlogeDigitale::getTime()
     string affichage;
     string minutes;
     string heure;
+    string pts=":";
 
 
-    //affichage_string=to_string(minutes);
-    //affichage_string=to_string(heure);
+    //minutes=to_string(ptrminutes->GetValCPT());
+    heure=to_string(ptrheure->GetValCPTint());
+    affichage=heure+pts+minutes;
     return affichage;
+
 }
 
 CHorlogeDigitale::CHorlogeDigitale()
