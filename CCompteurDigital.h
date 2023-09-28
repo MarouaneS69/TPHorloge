@@ -1,3 +1,11 @@
+/**
+ * @file CCompteurDigital.h
+ * @brief La classe permet l'incrementation et tous l'aspect technique de notre horloge
+ * @author Marouane Serradj
+ * @version v1.0.0
+ * @class CCompteurDigital
+ * @date 28/09/2023
+ */
 #ifndef CCOMPTEURDIGITAL_H
 #define CCOMPTEURDIGITAL_H
 #include <iostream>
@@ -5,17 +13,12 @@
 using namespace std;
 
 
-/**
- * Permet d'incrementer
- */
 class CCompteurDigital {
 
 private:
-	/**
-	 * La valeur max du compteur
-	 */
-    unsigned short BorneMax=24;
-    unsigned short ValCPT=00;
+
+    unsigned short BorneMax=24; //!<La valeur max du compteur
+    unsigned short ValCPT=00; //!<La valeur max du compteur
 
 
 public:
@@ -41,7 +44,7 @@ public:
 
 	int GetValCPTint();
 
-	CCompteurDigital(/* valeur max initiale */int pBorneMax);
+    CCompteurDigital(int pBorneMax);//!<valeur max initiale
 };
 
 #endif

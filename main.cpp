@@ -12,8 +12,8 @@ int main()
     CHorlogeDigitale affichage;
     CHorlogeDigitale horloge;
 
-    unsigned short CPT = 0;
-    unsigned short CPT2 = 0;
+    //unsigned short CPT = 0;
+    //unsigned short CPT2 = 0;
 
     /*cout << CPT++ << endl;
     cout << CPT << endl;
@@ -35,5 +35,5 @@ int main()
     }
 
 
-    return -1;
+    return 0;
 }
