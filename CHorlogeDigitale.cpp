@@ -1,16 +1,25 @@
 #include "CHorlogeDigitale.h"
 
 void CHorlogeDigitale::OnTopHorloge() {
-	// TODO - implement CHorlogeDigitale::OnTopHorloge
-	throw "Not yet implemented";
+    // TODO - implement CHorlogeDigitale::OnTopHorloge
+    throw "Not yet implemented";
 }
 
-void CHorlogeDigitale::getTime() {
-	// TODO - implement CHorlogeDigitale::getTime
-	throw "Not yet implemented";
+string CHorlogeDigitale::getTime()
+{
+    string affichage;
+    string minutes;
+    string heure;
+
+
+    //affichage_string=to_string(minutes);
+    //affichage_string=to_string(heure);
+    return affichage;
 }
 
-CHorlogeDigitale::CHorlogeDigitale() {
-	// TODO - implement CHorlogeDigitale::CHorlogeDigitale
-	throw "Not yet implemented";
+CHorlogeDigitale::CHorlogeDigitale()
+{
+    ptrheure = new CCompteurDigital(24);
+    ptrminutes = new CCompteurDigital(60);
+
 }

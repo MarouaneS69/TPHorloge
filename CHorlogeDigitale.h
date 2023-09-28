@@ -1,11 +1,12 @@
 #ifndef CHORLOGEDIGITALE_H
 #define CHORLOGEDIGITALE_H
+#include "CCompteurDigital.h"
 
 class CHorlogeDigitale {
 
 private:
-	CCompteurDigital heure;
-	CCompteurDigital minutes;
+    CCompteurDigital *ptrheure; // "*" = pointeur sur l'objet CCompteur
+    CCompteurDigital *ptrminutes; //"*" = pointeur sur l'objet CCompteur
 
 public:
 	/**
@@ -13,7 +14,7 @@ public:
 	 */
 	void OnTopHorloge();
 
-	void getTime();
+    string getTime();
 
 	CHorlogeDigitale();
 };
