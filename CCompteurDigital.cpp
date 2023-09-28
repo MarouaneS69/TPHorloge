@@ -18,6 +18,11 @@ std::string CCompteurDigital::GetValCPT()
 {
     string valcpt_string;
     valcpt_string=to_string(ValCPT);
+
+    if(ValCPT<10){
+        valcpt_string="0"+ valcpt_string;
+    }
+
     return valcpt_string;
 
 }

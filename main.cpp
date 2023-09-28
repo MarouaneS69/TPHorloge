@@ -20,20 +20,20 @@ int main()
     cout << CPT++ << endl;
     cout << CPT << endl;
     cout << CPT++ << endl;
-    cout << CPT << endl;*/
-
-   while(true){
-   horloge.OnTopHorloge();}
-
-    /*while(CPT<60){
+    cout << CPT << endl;
+    while(CPT<60){
     CPT++;
     minutes.incrementer();
     }
     while(CPT2<24){
     CPT2++;
-    heure.incrementer();
-    }*/
-    cout << affichage.getTime() << endl;
+    heure.incrementer();}*/
+
+    while (true){
+        horloge.OnTopHorloge();
+        cout << horloge.getTime() << endl;
+    }
+
 
     return -1;
 }

@@ -16,9 +16,9 @@ string CHorlogeDigitale::getTime()
     string pts=":";
 
 
-    //minutes=to_string(ptrminutes->GetValCPT());
-    heure=to_string(ptrheure->GetValCPTint());
-    affichage=heure+pts+minutes;
+    minutes=(ptrminutes->GetValCPT());
+    heure=(ptrheure->GetValCPT());
+    affichage = heure + pts + minutes;
     return affichage;
 
 }
